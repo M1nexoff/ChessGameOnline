@@ -12,6 +12,14 @@ object MyShar {
     }
 
     fun setUserInfo(user: UserData){
-
+        sharedPreferences.edit().putString("name",user.name).apply()
+        sharedPreferences.edit().putString("id",user.id).apply()
     }
+
+    fun getUserInfo():UserData{
+        val name= sharedPreferences.getString("name","")?:""
+        val id= sharedPreferences.getString("id","")?:""
+        return UserData(name,id)
+    }
+
 }
