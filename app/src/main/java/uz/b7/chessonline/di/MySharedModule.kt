@@ -1,4 +1,4 @@
-package com.sudo_pacman.uzumseller.di
+package uz.b7.chessonline.di
 
 import android.content.Context
 import android.content.SharedPreferences
