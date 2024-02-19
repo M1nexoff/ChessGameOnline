@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "725039520454",
+    "project_id": "chess-b9dad",
+    "storage_bucket": "chess-b9dad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:725039520454:android:613a41f75da99c6c4855c7",
+        "android_client_info": {
+          "package_name": "uz.b7.chessonline"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBE21rPa2WGmR3Yl6gs9Y0IrW7JUNHHu7A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
