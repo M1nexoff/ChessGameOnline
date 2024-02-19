@@ -1,8 +1,8 @@
-package uz.b7.chessonline.presenter.screen.login
+package uz.b7.chessonline.presenter.screen.singUp
 
 import androidx.lifecycle.ViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 
 @HiltViewModel
-class LoginVMImpl : ViewModel(),LoginVM {
+class SignUpVMImpl : ViewModel(),SignUpVm{
 }
