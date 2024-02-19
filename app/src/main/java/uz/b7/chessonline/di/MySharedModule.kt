@@ -1,18 +1,18 @@
 package uz.b7.chessonline.di
 
-import android.content.Context
 import android.content.SharedPreferences
+import dagger.Binds
 import dagger.Module
-import dagger.Provides
 import dagger.hilt.InstallIn
-import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
+import uz.b7.chessonline.data.sourse.MyShar
+import uz.b7.chessonline.data.sourse.MySharImpl
 import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
-class MySharedModule {
-    @[Provides Singleton]
-    fun providePref(@ApplicationContext context: Context): SharedPreferences =
-        context.getSharedPreferences("AppPref", Context.MODE_PRIVATE)
+interface MySharedModule {
+    @[Binds Singleton]
+    fun providePref(impl: MySharImpl): MyShar
+
 }

@@ -81,7 +81,6 @@ dependencies {
     implementation("com.google.firebase:firebase-firestore")
     implementation("com.google.firebase:firebase-auth")
     implementation("com.google.firebase:firebase-storage")
-
     //Glide
     implementation ("com.github.bumptech.glide:glide:4.4.0")
     kapt("com.github.bumptech.glide:compiler:4.4.0")

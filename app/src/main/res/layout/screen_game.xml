@@ -4,10 +4,10 @@
     android:layout_height="match_parent"
     android:background="#101010"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-
-
-
-
+<!--    <ImageView-->
+<!--        android:layout_width="48dp"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:background="@drawable/user_icon"/>-->
     <LinearLayout
         android:id="@+id/conteyner"
         android:layout_width="match_parent"
@@ -26,11 +26,15 @@
             android:orientation="vertical"
             android:layout_height="match_parent">
             <ImageView
+                android:src="@drawable/black_rook"
+                android:padding="2dp"
                 android:background="@color/color1"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"/>
             <ImageView
+                android:src="@drawable/black_pawn"
+                android:padding="2dp"
                 android:background="@color/color2"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -56,11 +60,16 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"/>
             <ImageView
+                android:src="@drawable/white_pawn"
+                android:padding="2dp"
                 android:background="@color/color1"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"/>
             <ImageView
+                android:src="@drawable/white_rook"
+                android:layout_gravity="center"
+                android:padding="2dp"
                 android:background="@color/color2"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -72,11 +81,15 @@
             android:orientation="vertical"
             android:layout_height="match_parent">
             <ImageView
+                android:src="@drawable/black_knight"
+                android:padding="2dp"
                 android:background="@color/color2"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"/>
             <ImageView
+                android:src="@drawable/black_pawn"
+                android:padding="2dp"
                 android:background="@color/color1"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -102,11 +115,15 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"/>
             <ImageView
+                android:src="@drawable/white_pawn"
+                android:padding="2dp"
                 android:background="@color/color2"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"/>
             <ImageView
+                android:src="@drawable/white_knight"
+                android:padding="2dp"
                 android:background="@color/color1"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -118,11 +135,15 @@
             android:orientation="vertical"
             android:layout_height="match_parent">
             <ImageView
+                android:src="@drawable/black_bishop"
+                android:padding="2dp"
                 android:background="@color/color1"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"/>
             <ImageView
+                android:src="@drawable/black_pawn"
+                android:padding="2dp"
                 android:background="@color/color2"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -148,11 +169,15 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"/>
             <ImageView
+                android:src="@drawable/white_pawn"
+                android:padding="2dp"
                 android:background="@color/color1"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"/>
             <ImageView
+                android:padding="2dp"
+                android:src="@drawable/white_bishop"
                 android:background="@color/color2"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -164,11 +189,15 @@
             android:orientation="vertical"
             android:layout_height="match_parent">
             <ImageView
+                android:src="@drawable/black_queen"
+                android:padding="2dp"
                 android:background="@color/color2"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"/>
             <ImageView
+                android:src="@drawable/black_pawn"
+                android:padding="2dp"
                 android:background="@color/color1"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -196,11 +225,15 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"/>
             <ImageView
+                android:src="@drawable/white_pawn"
+                android:padding="2dp"
                 android:background="@color/color2"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"/>
             <ImageView
+                android:padding="2dp"
+                android:src="@drawable/white_queen"
                 android:background="@color/color1"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -212,11 +245,15 @@
             android:orientation="vertical"
             android:layout_height="match_parent">
             <ImageView
+                android:src="@drawable/black_king"
+                android:padding="2dp"
                 android:background="@color/color1"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"/>
             <ImageView
+                android:src="@drawable/black_pawn"
+                android:padding="2dp"
                 android:background="@color/color2"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -242,11 +279,15 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"/>
             <ImageView
+                android:src="@drawable/white_pawn"
+                android:padding="2dp"
                 android:background="@color/color1"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"/>
             <ImageView
+                android:padding="2dp"
+                android:src="@drawable/white_king"
                 android:background="@color/color2"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -258,11 +299,15 @@
             android:orientation="vertical"
             android:layout_height="match_parent">
             <ImageView
+                android:src="@drawable/black_bishop"
+                android:padding="2dp"
                 android:background="@color/color2"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"/>
             <ImageView
+                android:src="@drawable/black_pawn"
+                android:padding="2dp"
                 android:background="@color/color1"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -288,11 +333,15 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"/>
             <ImageView
+                android:src="@drawable/white_pawn"
+                android:padding="2dp"
                 android:background="@color/color2"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"/>
             <ImageView
+                android:padding="2dp"
+                android:src="@drawable/white_bishop"
                 android:background="@color/color1"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -304,11 +353,15 @@
             android:orientation="vertical"
             android:layout_height="match_parent">
             <ImageView
+                android:src="@drawable/black_knight"
+                android:padding="2dp"
                 android:background="@color/color1"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"/>
             <ImageView
+                android:src="@drawable/black_pawn"
+                android:padding="2dp"
                 android:background="@color/color2"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -334,11 +387,15 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"/>
             <ImageView
+                android:src="@drawable/white_pawn"
+                android:padding="2dp"
                 android:background="@color/color1"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"/>
             <ImageView
+                android:padding="2dp"
+                android:src="@drawable/white_knight"
                 android:background="@color/color2"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -350,11 +407,15 @@
             android:orientation="vertical"
             android:layout_height="match_parent">
             <ImageView
+                android:src="@drawable/black_rook"
+                android:padding="2dp"
                 android:background="@color/color2"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"/>
             <ImageView
+                android:src="@drawable/black_pawn"
+                android:padding="2dp"
                 android:background="@color/color1"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -380,11 +441,15 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"/>
             <ImageView
+                android:src="@drawable/white_pawn"
+                android:padding="2dp"
                 android:background="@color/color2"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"/>
             <ImageView
+                android:padding="2dp"
+                android:src="@drawable/white_rook"
                 android:background="@color/color1"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
