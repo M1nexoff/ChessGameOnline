@@ -1,4 +1,8 @@
 package uz.b7.chessonline.presenter.screen.play
 
-class PlayVMImpl {
+import androidx.lifecycle.ViewModel
+import dagger.hilt.android.lifecycle.HiltViewModel
+
+@HiltViewModel
+class PlayVMImpl : ViewModel(), PlayVm {
 }

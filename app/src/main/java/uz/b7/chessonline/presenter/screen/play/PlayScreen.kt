@@ -1,4 +1,8 @@
 package uz.b7.chessonline.presenter.screen.play
 
-class PlayScreen {
+import androidx.fragment.app.Fragment
+import dagger.hilt.android.AndroidEntryPoint
+
+@AndroidEntryPoint
+class PlayScreen : Fragment(){
 }
