@@ -4,10 +4,23 @@
     android:layout_height="match_parent"
     android:background="#101010"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-<!--    <ImageView-->
-<!--        android:layout_width="48dp"-->
-<!--        android:layout_height="48dp"-->
-<!--        android:background="@drawable/user_icon"/>-->
+    <ImageView
+        android:id="@+id/user_img1"
+        app:layout_constraintBottom_toTopOf="@id/conteyner"
+        app:layout_constraintLeft_toLeftOf="@id/conteyner"
+        android:layout_margin="16dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/user_icon"/>
+    <TextView
+        app:layout_constraintLeft_toRightOf="@id/user_img1"
+        app:layout_constraintTop_toTopOf="@id/user_img1"
+        app:layout_constraintBottom_toBottomOf="@id/user_img1"
+        android:layout_marginStart="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Elon Musk"/>
     <LinearLayout
         android:id="@+id/conteyner"
         android:layout_width="match_parent"
