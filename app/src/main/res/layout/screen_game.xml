@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#101010"
+    android:background="#fff"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 <!--    <ImageView-->
 <!--        android:layout_width="48dp"-->
 <!--        android:layout_height="48dp"-->
 <!--        android:background="@drawable/user_icon"/>-->
+
     <LinearLayout
         android:id="@+id/conteyner"
         android:layout_width="match_parent"
@@ -456,4 +458,45 @@
                 android:layout_weight="1"/>
         </LinearLayout>
     </LinearLayout>
+
+    <TextView
+        android:textColor="@color/black"
+        android:fontFamily="@font/nunito"
+        android:id="@+id/opponent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:text="Anonymous"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/conteyner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.513" />
+
+    <TextView
+        android:textColor="@color/black"
+        android:fontFamily="@font/nunito"
+        android:layout_marginBottom="32dp"
+        android:id="@+id/you"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:text="You: Anonymous"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/conteyner" />
+
+    <Button
+        android:fontFamily="@font/nunito"
+        android:id="@+id/button"
+        android:textSize="16dp"
+        android:backgroundTint="#F1C520"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:text="Search Game"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
