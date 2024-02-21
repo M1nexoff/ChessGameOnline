@@ -3,13 +3,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff"
+    android:background="#101010"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-<!--    <ImageView-->
-<!--        android:layout_width="48dp"-->
-<!--        android:layout_height="48dp"-->
-<!--        android:background="@drawable/user_icon"/>-->
-
+    <ImageView
+        android:id="@+id/user_img1"
+        app:layout_constraintBottom_toTopOf="@id/conteyner"
+        app:layout_constraintLeft_toLeftOf="@id/conteyner"
+        android:layout_margin="16dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/user_icon"/>
+    <TextView
+        app:layout_constraintLeft_toRightOf="@id/user_img1"
+        app:layout_constraintTop_toTopOf="@id/user_img1"
+        app:layout_constraintBottom_toBottomOf="@id/user_img1"
+        android:layout_marginStart="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Elon Musk"/>
+    <ImageView
+        android:id="@+id/user_img2"
+        app:layout_constraintTop_toBottomOf="@id/conteyner"
+        app:layout_constraintLeft_toLeftOf="@id/conteyner"
+        android:layout_margin="16dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/user_icon"/>
+    <TextView
+        app:layout_constraintLeft_toRightOf="@id/user_img2"
+        app:layout_constraintTop_toTopOf="@id/user_img2"
+        app:layout_constraintBottom_toBottomOf="@id/user_img2"
+        android:layout_marginStart="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Elon Musk"/>
     <LinearLayout
         android:id="@+id/conteyner"
         android:layout_width="match_parent"
@@ -458,35 +487,6 @@
                 android:layout_weight="1"/>
         </LinearLayout>
     </LinearLayout>
-
-    <TextView
-        android:textColor="@color/black"
-        android:fontFamily="@font/nunito"
-        android:id="@+id/opponent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:text="Anonymous"
-        android:textSize="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/conteyner"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.513" />
-
-    <TextView
-        android:textColor="@color/black"
-        android:fontFamily="@font/nunito"
-        android:layout_marginBottom="32dp"
-        android:id="@+id/you"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:text="You: Anonymous"
-        android:textSize="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/conteyner" />
-
     <Button
         android:fontFamily="@font/nunito"
         android:id="@+id/button"
@@ -499,4 +499,5 @@
         android:text="Search Game"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
