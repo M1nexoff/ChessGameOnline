@@ -1,11 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/app_nav"
-    app:startDestination="@id/gameScreen">
+    app:startDestination="@id/splashScreen">
 
     <fragment
         android:id="@+id/gameScreen"
         android:name="uz.b7.chessonline.presenter.screen.game.GameScreen"
-        android:label="GameScreen" />
+        android:label="GameScreen"
+        tools:layout="@layout/screen_game"/>
+    <fragment
+        android:id="@+id/searchScreen"
+        android:name="uz.b7.chessonline.presenter.screen.play.SearchScreen"
+        android:label="SearchScreen"
+        tools:layout="@layout/screen_search">
+        <action
+            android:id="@+id/action_searchScreen_to_gameScreen"
+            app:destination="@id/gameScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginScreen"
+        android:name="uz.b7.chessonline.presenter.screen.login.LoginScreen"
+        android:label="LoginScreen"
+        tools:layout="@layout/screen_login">
+        <action
+            android:id="@+id/action_loginScreen_to_searchScreen"
+            app:destination="@id/searchScreen"
+            app:popUpTo="@id/loginScreen"
+            app:popUpToInclusive="true" />
+        <action
+            app:popUpTo="@id/loginScreen"
+            app:popUpToInclusive="true"
+            android:id="@+id/action_loginScreen_to_signUpScreen"
+            app:destination="@id/signUpScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="uz.b7.chessonline.presenter.screen.splash.SplashScreen"
+        android:label="SplashScreen"
+        tools:layout="@layout/screen_splash">
+        <action
+            android:id="@+id/action_splashScreen_to_loginScreen"
+            app:destination="@id/loginScreen"
+            app:popUpTo="@id/splashScreen"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_splashScreen_to_searchScreen"
+            app:destination="@id/searchScreen"
+            app:popUpTo="@id/splashScreen"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/signUpScreen"
+        android:name="uz.b7.chessonline.presenter.screen.singUp.SignUpScreen"
+        android:label="SignUpScreen" >
+        <action
+            android:id="@+id/action_signUpScreen_to_searchScreen"
+            app:destination="@id/searchScreen"
+            app:popUpTo="@id/signUpScreen"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_signUpScreen_to_loginScreen"
+            app:destination="@id/loginScreen"
+            app:popUpTo="@id/signUpScreen"
+            app:popUpToInclusive="true"/>
+    </fragment>
 </navigation>

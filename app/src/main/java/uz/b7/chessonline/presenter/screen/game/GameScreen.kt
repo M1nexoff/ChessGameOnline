@@ -79,7 +79,7 @@ class GameScreen : Fragment(R.layout.screen_game) {
     }
 
     private fun updateChessboard(data: GameData) {
-        val isBlackUser = data.blackId == pref.getUserInfo()
+        val isBlackUser = data.blackId == pref.getUserInfo().name
         val reversedChessboard = if (isBlackUser) data.data.reversed() else data.data
         for (i in reversedChessboard.indices) {
             val linear = binding.conteyner.getChildAt(i) as LinearLayout

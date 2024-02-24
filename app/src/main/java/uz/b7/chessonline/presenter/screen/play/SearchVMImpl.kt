@@ -1,4 +1,4 @@
-package uz.b7.chessonline.presenter.screen.singUp
+package uz.b7.chessonline.presenter.screen.play
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -8,24 +8,22 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.callbackFlow
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
-import uz.b7.chessonline.data.model.SingUpData
-import uz.b7.chessonline.domain.SingUpRepository
+import uz.b7.chessonline.data.model.UserData
+import uz.b7.chessonline.domain.SearchRepository
 import javax.inject.Inject
-import kotlin.math.sin
 
 @HiltViewModel
-class SignUpVMImpl @Inject constructor(
-    private val singUpRepository: SingUpRepository
-) : ViewModel(),SignUpVm{
-    override fun singUpUser(singUpData: SingUpData): Flow<Result<Unit>> = callbackFlow{
-        singUpRepository.singUpUser(singUpData).onEach {
+class SearchVMImpl @Inject constructor(
+    private val searchRepository: SearchRepository
+): ViewModel(), SearchVm {
+    override fun getAllActiveUser(): Flow<Result<List<UserData>>> = callbackFlow{
+        searchRepository.getAllActiveUser().onEach {
             it.onSuccess {
-                trySend(Result.success(Unit))
+                trySend(Result.success(it))
             }
             it.onFailure {
                 trySend(Result.failure(it))
             }
-
         }.launchIn(viewModelScope)
         awaitClose()
     }

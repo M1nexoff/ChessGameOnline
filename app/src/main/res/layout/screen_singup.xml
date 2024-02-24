@@ -5,23 +5,47 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TextView
-        android:id="@+id/login"
+        android:id="@+id/singup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="32dp"
-        android:text="Login Your\nAccount"
+        android:layout_marginLeft="24dp"
+        android:text="Sing up\nYour Account"
         android:textColor="@color/black"
         android:textSize="24dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.248" />
+        app:layout_constraintVertical_bias="0.196" />
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name_conteyner"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/singup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        app:boxStrokeColor="@color/black"
+        app:cursorColor="#4a7d74"
+        app:endIconMode="clear_text"
+        app:hintTextColor="#4a7d74">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:ellipsize="end"
+            android:hint="Name"
+            android:inputType="text"
+            android:maxLines="1"
+            android:maxLength="13"
+            android:paddingStart="16dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/phone_conteyner"
         android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@id/login"
+        app:layout_constraintTop_toBottomOf="@id/name_conteyner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="32dp"
@@ -65,8 +89,7 @@
             android:paddingStart="16dp"/>
     </com.google.android.material.textfield.TextInputLayout>
     <FrameLayout
-        android:id="@+id/login_button"
-        android:clickable="true"
+        android:id="@+id/singup_button"
         app:layout_constraintTop_toBottomOf="@id/password_conteyner"
         android:layout_marginTop="32dp"
         android:layout_width="match_parent"
@@ -77,7 +100,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Login"
+            android:text="Signup"
             android:textStyle="bold"
             android:textSize="16dp"
             android:textColor="@color/white"
@@ -85,9 +108,9 @@
             android:layout_margin="16dp"/>
     </FrameLayout>
     <TextView
-        android:id="@+id/singup"
+        android:id="@+id/login"
         android:clickable="true"
-        app:layout_constraintTop_toBottomOf="@id/login_button"
+        app:layout_constraintTop_toBottomOf="@id/singup_button"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="16dp"

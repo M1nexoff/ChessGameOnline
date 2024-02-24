@@ -73,14 +73,14 @@ class GameRepositoryImpl @Inject constructor(private val pref: MyShar) : GameRep
 
     private fun getInitialChessboard(): List<List<Int>> {
         return listOf(
-            listOf(2, 3, 4, 5, 6, 4, 3, 2),
-            listOf(1, 1, 1, 1, 1, 1, 1, 1),
-            listOf(0, 0, 0, 0, 0, 0, 0, 0),
-            listOf(0, 0, 0, 0, 0, 0, 0, 0),
-            listOf(0, 0, 0, 0, 0, 0, 0, 0),
-            listOf(0, 0, 0, 0, 0, 0, 0, 0),
+            listOf(8, 9, 10, 12, 11, 10, 9, 8),
             listOf(7, 7, 7, 7, 7, 7, 7, 7),
-            listOf(8, 9, 10, 11, 12, 10, 9, 8)
+            listOf(0, 0, 0, 0, 0, 0, 0, 0),
+            listOf(0, 0, 0, 0, 0, 0, 0, 0),
+            listOf(0, 0, 0, 0, 0, 0, 0, 0),
+            listOf(0, 0, 0, 0, 0, 0, 0, 0),
+            listOf(1, 1, 1, 1, 1, 1, 1, 1),
+            listOf(2, 3, 4, 6, 5, 4, 3, 2)
         )
     }
 
